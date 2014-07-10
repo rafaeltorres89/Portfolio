@@ -1,0 +1,173 @@
+/*  ==========================================================================
+    STYLE: FULL PAGE
+    --------------------------------------------------------------------------
+    Version: 1.0;
+    --------------------------------------------------------------------------
+    by Rafael Torres
+    ==========================================================================
+*/
+/*  --------------------------------------------------------------------------
+    SASS includes
+    ==========================================================================
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/*  ==========================================================================
+    Hash Towers: UI SETTINGS
+    --------------------------------------------------------------------------
+    Version: 1.0;
+    ==========================================================================
+*/
+/* Mixin
+----------------------------------------------------------------------- */
+/*  --------------------------------------------------------------------------
+    UI: Setup
+    --------------------------------------------------------------------------
+*/
+/*  ==========================================================================
+    Hash Towers: UI SETTINGS
+    --------------------------------------------------------------------------
+    Version: 1.0;
+    ==========================================================================
+*/
+/* Settings
+----------------------------------------------------------------------- */
+#FLOAT-LEFT, body.webmaster-ux section, body.webmaster-ux section .container .nav_left, body.webmaster-ux section .container .nav_right, body.webmaster-ux section .box_left {
+  float: left;
+}
+
+#FLOAT-RIGHT, body.webmaster-ux section .box_right {
+  float: right;
+}
+
+#HIDE, body.webmaster-ux section .container .show, body.webmaster-ux section .container:hover .nav {
+  display: none;
+}
+
+#SHOW, body.webmaster-ux section .container .nav, body.webmaster-ux section .container:hover .show {
+  display: block;
+}
+
+#DEFAULT-CURSOR {
+  cursor: default;
+}
+
+#FONT-BOLD {
+  font-weight: bold;
+}
+
+#FONT-ITALIC {
+  font-style: italic;
+}
+
+#FONT-NORMAL {
+  font-weight: normal;
+}
+
+#FONT-LIGHTER, body.webmaster-ux {
+  font-weight: lighter;
+}
+
+#TEXT-UPPERCASE {
+  text-transform: uppercase;
+}
+
+#POSITION-ABSOLUTE, body.webmaster-ux section .container .nav, body.webmaster-ux section .container .show {
+  position: absolute;
+}
+
+#POSITION-RELATIVE, body.webmaster-ux section .container {
+  position: relative;
+}
+
+#POSITION-FIXED, body.webmaster-ux section .container .show p.copyright {
+  position: fixed;
+}
+
+/*  --------------------------------------------------------------------------
+    SASS Default
+    ==========================================================================
+*/
+html {
+  height: 100%;
+}
+
+body.webmaster-ux {
+  background: #fdfdfd;
+  color: #1f272d;
+  font-family: "Open Sans", Tahoma, Arial, Verdana;
+  font-size: 62.5%;
+  height: 100%;
+}
+body.webmaster-ux section {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body.webmaster-ux section .container {
+  height: 100%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+body.webmaster-ux section .container .nav {
+  height: 30px;
+  left: 50%;
+  margin-left: -32px;
+  top: 50%;
+  vertical-align: middle;
+  width: 65px;
+}
+body.webmaster-ux section .container .nav_left {
+  background: url(../image/sprite.png) 0 0 no-repeat;
+}
+body.webmaster-ux section .container .nav_right {
+  background: url(../image/sprite.png) -65px 0 no-repeat;
+}
+body.webmaster-ux section .container .show {
+  height: 100%;
+  margin: 0;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+body.webmaster-ux section .container .show h2 {
+  font-size: 1.6em;
+  margin: 5% 0 10% 0;
+}
+body.webmaster-ux section .container .show h1 {
+  font-size: 5.0em;
+  z-index: 2000;
+  margin-bottom: 17%;
+}
+body.webmaster-ux section .container .show nav {
+  background: #f9f9f9;
+  height: 27%;
+  width: 100%;
+}
+body.webmaster-ux section .container .show p.copyright {
+  font-size: 1.2em;
+  text-align: left;
+  bottom: 0;
+  margin: 0 0 0.5% 0.5%;
+}
+body.webmaster-ux section .box_left {
+  background: whitesmoke;
+}
+body.webmaster-ux section .box_right {
+  background: #1f272d;
+}
+body.webmaster-ux section p {
+  font-size: 1.4em;
+}
