@@ -13,6 +13,7 @@
 */
 
     @import "reset";
+    @import "animations";
     @import "mixin";
 
 /*  --------------------------------------------------------------------------
@@ -49,6 +50,7 @@
                 {
                     @extend #POSITION-ABSOLUTE;
                     @extend #SHOW;
+                    @include fadeIn;
                     height: 30px;
                     left: 50%;
                     margin-left: -32px;
@@ -62,18 +64,33 @@
 
                 .show
                 {
-                    @extend #POSITION-ABSOLUTE;
                     @extend #HIDE;
+                    @extend #POSITION-ABSOLUTE;
                     height: 100%;
                     margin: 0;
                     top: 0;
                     text-align: center;
                     width: 100%;
 
+                    .triangle
+                    {
+                        @extend #FLOAT-LEFT;
+                        @extend #POSITION-ABSOLUTE;
+                        background: url(../image/sprite.png) 0 -30px no-repeat;
+                        height: 213px;
+                        margin: 0;
+                        top: 0;
+                        width: 250px;
+                        z-index: 1000;
+                    }
+
                     h2
                     {
                         font-size: 1.6em;
                         margin: 5% 0 10% 0;
+
+                        -webkit-animation: fitTop 1s;
+                        animation: fitTop 1s;
                     }
 
                     h1
@@ -85,10 +102,127 @@
 
                     nav
                     {
-                        background: $palette-clean;
-                        height: 27%;
+                        height: 26.8%;
                         width: 100%;
+
+                        ul
+                        {
+                            @include block_default;
+                            list-style: none;
+
+                            li
+                            {
+                                background: $palette-clean;
+                                border-bottom: solid 1px $palette-gray;
+                                border-top: solid 1px $palette-gray;
+                                height: 32.7%;
+                                line-height: 32.7%;
+                                width: 100%;
+
+                                a
+                                {
+                                    @extend #FLOAT-LEFT;
+                                    @extend #POSITION-RELATIVE;
+                                    @include block_default;
+                                    text-align: center;
+
+                                    span
+                                    {
+                                        @extend #TEXT-INDENT;
+                                        @extend #POSITION-ABSOLUTE;
+                                        left: 50%;
+                                        top: 50%;
+                                        margin-top: -27px;
+                                        vertical-align: middle;
+                                    }
+
+                                    span.graphic
+                                    {
+                                        background: url(../image/sprite.png) -258px -41px no-repeat;
+                                        height: 54px;
+                                        margin-left: -27px;
+                                        width: 55px;
+                                    }
+
+                                    span.design
+                                    {
+                                        background: url(../image/sprite.png) -250px -149px no-repeat;
+                                        height: 54px;
+                                        margin-left: -38px;
+                                        width: 72px;
+                                    }
+
+                                    span.code
+                                    {
+                                        background: url(../image/sprite.png) -250px -257px no-repeat;
+                                        height: 54px;
+                                        margin-left: -38px;
+                                        width: 76px;
+                                    }
+                                }
+
+                                a:hover
+                                {
+                                    background: $palette-pastel;
+
+                                    span.graphic    { background: url(../image/sprite.png) -258px -95px no-repeat; }
+                                    span.design     { background: url(../image/sprite.png) -250px -203px no-repeat; }
+                                    span.code       { background: url(../image/sprite.png) -174px -257px no-repeat; }
+
+                                    -webkit-animation: backCollor 0.5s;
+                                    animation: backCollor 0.5s;
+                                }
+                            }
+                        }
                     }
+
+                    .social_media
+                    {
+                        height: 20px;
+                        margin: 0 auto;
+                        margin-bottom: 3.5%;
+                        margin-top: 4.5%;
+                        width: 235px;
+
+                        -webkit-animation: fitSM 1s;
+                        animation: fitSM 1s;
+
+                        ul
+                        {
+                            @include block_default;
+                            list-style: none;
+
+                            li
+                            {
+                                @extend #FLOAT-LEFT;
+                                @include block_default;
+                                height: 20px;
+                                margin-right: 29.5px;
+
+                                a
+                                {
+                                    @extend #FLOAT-LEFT;
+                                    @extend #TEXT-INDENT;
+                                    @include block_default;
+                                }
+                            }
+
+                            li:last-child   { margin-right: 0px; }
+
+                            li.face         { background: url(../image/sprite.png) -130px 0 no-repeat;  width: 24px; }
+                            li.face:hover   { background: url(../image/sprite.png) -154px 0 no-repeat; }
+                            li.gPlus        { background: url(../image/sprite.png) -178px 0 no-repeat;  width: 20px; }
+                            li.gPlus:hover  { background: url(../image/sprite.png) -198px 0 no-repeat; }
+                            li.din          { background: url(../image/sprite.png) -218px 0 no-repeat;  width: 20px; }
+                            li.din:hover    { background: url(../image/sprite.png) -238px 0 no-repeat; }
+                            li.twitt        { background: url(../image/sprite.png) -258px 0 no-repeat;  width: 24px; }
+                            li.twitt:hover  { background: url(../image/sprite.png) -282px 0 no-repeat; }
+                            li.mail         { background: url(../image/sprite.png) -258px -20px no-repeat;  width: 28px; }
+                            li.mail:hover   { background: url(../image/sprite.png) -286px -20px no-repeat; }
+                        }
+                    }
+
+                    p.phones { font-size: 1.4em; }
 
                     p.copyright
                     {
@@ -96,26 +230,63 @@
                         font-size: 1.2em;
                         text-align: left;
                         bottom: 0;
-                        margin: 0 0 0.5% 0.5%;
+                        margin: 0 0 1% 0.5%;
+
+                        -webkit-animation: fitBottom 1s;
+                        animation: fitBottom 1s;
                     }
                 }
 
-                .other_info  {  }
-                .about_me    {  }
+                .other_info  { background: $palette-beige; }
+                .about_me
+                {
+                    background: $palette-dark;
+
+                    p.about
+                    {
+                        @include fitBtnTop;
+                        color: $palette-beige;
+                        font-size: 1.5em;
+                        margin: 15.5% 0 27.5% 0;
+                    }
+                }
             }
 
             .box_left  { @extend #FLOAT-LEFT;   background: $palette-beige; }
             .box_right { @extend #FLOAT-RIGHT;   background: $palette-dark; }
 
-            .container:hover 
+            .container:hover
             {
                 .nav    { @extend #HIDE; }
-                .show   { @extend #SHOW; }
+                .show
+                {
+                    @extend #SHOW;
+                    @include fadeIn;
+                }
             }
 
-            p
+            p { font-size: 1.4em; }
+
+            a.btn
             {
-                font-size: 1.4em;
+                @extend #SHOW;
+                @include border_radius;
+                border: solid 2px $palette-beige;
+                font-size: 1.8em;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                text-decoration: none;
+                width: 200px;
+                margin: 0 auto;
             }
+
+            a.btn:hover     { @include fadeInBtn; }
+
+            a.dark          { background: $palette-dark;  color: $palette-beige; }
+            a.dark:hover    { background: $palette-beige; color: $palette-dark; }
+
+            a.light         { background: $palette-beige; color: $palette-dark; }
+            a.light:hover   { background: $palette-dark;  color: $palette-beige; }
         }
     }
