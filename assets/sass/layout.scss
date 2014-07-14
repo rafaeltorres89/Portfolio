@@ -42,6 +42,7 @@
             @extend #FLOAT-LEFT;
             @include block_default;
 
+<<<<<<< HEAD
             .fifty { width: 50%; }
 
             .sixteen
@@ -50,14 +51,31 @@
 
                 -webkit-animation: animaNav 1s;
                 animation: animaNav 1s;
+=======
+            .fifty      { width: 50%; }
+
+            .sixteen
+            {
+                width: 16.7%; 
+
+                -webkit-animation: widthNav 1s;
+                animation: widthNav 1s;
+>>>>>>> FETCH_HEAD
             }
 
             .eighty
             {
+<<<<<<< HEAD
                 width: 83.3%;
 
                 -webkit-animation: animaMain 1s;
                 animation: animaMain 1s;
+=======
+                width: 83.3%; 
+
+                -webkit-animation: widthMain 1s;
+                animation: widthMain 1s;
+>>>>>>> FETCH_HEAD
             }
 
             .container
@@ -68,6 +86,7 @@
                 .nav
                 {
                     @extend #POSITION-ABSOLUTE;
+                    @extend #FLOAT-LEFT;
                     @extend #SHOW;
                     @include fadeIn;
                     height: 30px;
@@ -78,8 +97,13 @@
                     width: 65px;
                 }
 
+<<<<<<< HEAD
                 .nav_left   { @extend #FLOAT-LEFT;   background: url(../image/sprite.png) 0 0 no-repeat; }
                 .nav_right  { @extend #FLOAT-LEFT;   background: url(../image/sprite.png) 0 -30px no-repeat; }
+=======
+                .nav_full   { background: url(../image/sprite.png) 0 0 no-repeat; }
+                .nav_down   { background: url(../image/sprite.png) 0 -30px no-repeat; }
+>>>>>>> FETCH_HEAD
 
                 .show
                 {
@@ -106,6 +130,10 @@
                         z-index: 2000;
                         margin-bottom: 17%;
                     }
+
+                    .logo,
+                    a.home 
+                    { @extend #HIDE; }
 
                     nav
                     {
@@ -245,6 +273,7 @@
                 }
 
                 .other_info  { background: $palette-beige; }
+
                 .about_me
                 {
                     background: $palette-dark;
@@ -256,13 +285,36 @@
                         font-size: 1.5em;
                         margin: 15.5% 0 27.5% 0;
                     }
+
+                    h3
+                    {
+                        a
+                        { 
+                            @extend #POSITION-FIXED;
+                            @extend #TEXT-INDENT;
+                            background: url(../image/sprite.png) -52px -108px no-repeat;
+                            bottom: 0;
+                            right: 0;
+                            height: 40px;
+                            margin: 0 1% 1% 0;
+                            width: 105px;
+                        }
+
+                        a:hover { background-position: -157px -108px; }
+                    }
                 }
             }
 
+<<<<<<< HEAD
             .box_light  { background: $palette-beige; }
             .box_dark   { background: $palette-dark; }
+=======
+            .box_nav    { @extend #FLOAT-LEFT;   background: $palette-beige; }
+            .box_main   { @extend #FLOAT-RIGHT;   background: $palette-dark; }
+>>>>>>> FETCH_HEAD
 
-            .container:hover
+            .container:hover,
+            .active_nav
             {
                 .nav    { @extend #HIDE; }
                 .show
@@ -272,6 +324,7 @@
                 }
             }
 
+<<<<<<< HEAD
             .container_active
             {
                 .nav    { @extend #HIDE; }
@@ -279,6 +332,36 @@
                 {
                     @extend #SHOW;
                     @include fadeIn;
+=======
+            .active_nav
+            {
+                .show
+                {
+                    h1 { @extend #HIDE; }
+                    h2 { @extend #HIDE; }
+
+                    .logo
+                    {
+                        @extend #SHOW;
+                        @include block_default;
+                        background: $palette-pastel;
+                        border: solid 2px $palette-gray;
+                        height: 5.5%;
+                        margin-bottom: 16.8%;
+                    }
+
+                    a.home
+                    {
+                        @extend #SHOW;
+                        color: $palette-orange;
+                        font-size: 1.5em;
+                        margin-bottom: 2.5%;
+                        text-decoration: underline;
+                        width: 100%;
+                    }
+
+                    a.home:hover { text-decoration: none; }
+>>>>>>> FETCH_HEAD
                 }
             }
 

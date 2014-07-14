@@ -233,6 +233,26 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 }
 
+@-webkit-keyframes collor-first_child {
+  from {
+    background: #F5F5F5;
+  }
+
+  to {
+    background: #F5F5F5;
+  }
+}
+
+@keyframes collor-first_child {
+  from {
+    background: #F5F5F5;
+  }
+
+  to {
+    background: #F5F5F5;
+  }
+}
+
 @-webkit-keyframes fitBtnTop {
   from {
     color: #1F272D;
@@ -250,6 +270,46 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
   to {
     color: #F5F5F5;
+  }
+}
+
+@-webkit-keyframes widthNav {
+  from {
+    width: 50%;
+  }
+
+  to {
+    width: 16.7%;
+  }
+}
+
+@keyframes widthNav {
+  from {
+    width: 50%;
+  }
+
+  to {
+    width: 16.7%;
+  }
+}
+
+@-webkit-keyframes widthMain {
+  from {
+    width: 50%;
+  }
+
+  to {
+    width: 83.3%;
+  }
+}
+
+@keyframes widthMain {
+  from {
+    width: 50%;
+  }
+
+  to {
+    width: 83.3%;
   }
 }
 
@@ -273,6 +333,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 */
 /* Settings
 ----------------------------------------------------------------------- */
+<<<<<<< HEAD
 #FLOAT-LEFT, body.webmaster-ux section, body.webmaster-ux section .container, body.webmaster-ux section .container .nav_left, body.webmaster-ux section .container .nav_right, body.webmaster-ux section .container .show nav ul li a, body.webmaster-ux section .container .show .social_media ul li, body.webmaster-ux section .container .show .social_media ul li a {
   float: left;
 }
@@ -286,6 +347,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 #SHOW, body.webmaster-ux section .container .nav, body.webmaster-ux section .container:hover .show, body.webmaster-ux section .container_active .show, body.webmaster-ux section a.btn {
+=======
+#FLOAT-LEFT, body.webmaster-ux section, body.webmaster-ux section .container .nav, body.webmaster-ux section .container .show nav ul li a, body.webmaster-ux section .container .show .social_media ul li, body.webmaster-ux section .container .show .social_media ul li a, body.webmaster-ux section .box_nav {
+  float: left;
+}
+
+#FLOAT-RIGHT, body.webmaster-ux section .box_main {
+  float: right;
+}
+
+#HIDE, body.webmaster-ux section .container .show, body.webmaster-ux section .container .show .logo,
+body.webmaster-ux section .container .show a.home, body.webmaster-ux section .container:hover .nav,
+body.webmaster-ux section .active_nav .nav, body.webmaster-ux section .active_nav .show h1, body.webmaster-ux section .active_nav .show h2 {
+  display: none;
+}
+
+#SHOW, body.webmaster-ux section .container .nav, body.webmaster-ux section .container:hover .show,
+body.webmaster-ux section .active_nav .show, body.webmaster-ux section .active_nav .show .logo, body.webmaster-ux section .active_nav .show a.home, body.webmaster-ux section a.btn {
+>>>>>>> FETCH_HEAD
   display: block;
 }
 
@@ -313,7 +392,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   text-transform: uppercase;
 }
 
-#TEXT-INDENT, body.webmaster-ux section .container .show nav ul li a span, body.webmaster-ux section .container .show .social_media ul li a {
+#TEXT-INDENT, body.webmaster-ux section .container .show nav ul li a span, body.webmaster-ux section .container .show .social_media ul li a, body.webmaster-ux section .container .about_me h3 a {
   text-indent: -9999px;
 }
 
@@ -325,7 +404,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   position: relative;
 }
 
-#POSITION-FIXED, body.webmaster-ux section .container .show p.copyright {
+#POSITION-FIXED, body.webmaster-ux section .container .show p.copyright, body.webmaster-ux section .container .about_me h3 a {
   position: fixed;
 }
 
@@ -355,6 +434,7 @@ body.webmaster-ux section .fifty {
 }
 body.webmaster-ux section .sixteen {
   width: 16.7%;
+<<<<<<< HEAD
   -webkit-animation: animaNav 1s;
   animation: animaNav 1s;
 }
@@ -362,6 +442,15 @@ body.webmaster-ux section .eighty {
   width: 83.3%;
   -webkit-animation: animaMain 1s;
   animation: animaMain 1s;
+=======
+  -webkit-animation: widthNav 1s;
+  animation: widthNav 1s;
+}
+body.webmaster-ux section .eighty {
+  width: 83.3%;
+  -webkit-animation: widthMain 1s;
+  animation: widthMain 1s;
+>>>>>>> FETCH_HEAD
 }
 body.webmaster-ux section .container {
   height: 100%;
@@ -380,10 +469,14 @@ body.webmaster-ux section .container .nav {
   vertical-align: middle;
   width: 65px;
 }
-body.webmaster-ux section .container .nav_left {
+body.webmaster-ux section .container .nav_full {
   background: url(../image/sprite.png) 0 0 no-repeat;
 }
+<<<<<<< HEAD
 body.webmaster-ux section .container .nav_right {
+=======
+body.webmaster-ux section .container .nav_down {
+>>>>>>> FETCH_HEAD
   background: url(../image/sprite.png) 0 -30px no-repeat;
 }
 body.webmaster-ux section .container .show {
@@ -562,23 +655,64 @@ body.webmaster-ux section .container .about_me p.about {
   font-size: 1.5em;
   margin: 15.5% 0 27.5% 0;
 }
+<<<<<<< HEAD
 body.webmaster-ux section .box_light {
   background: whitesmoke;
 }
 body.webmaster-ux section .box_dark {
+=======
+body.webmaster-ux section .container .about_me h3 a {
+  background: url(../image/sprite.png) -52px -108px no-repeat;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  margin: 0 1% 1% 0;
+  width: 105px;
+}
+body.webmaster-ux section .container .about_me h3 a:hover {
+  background-position: -157px -108px;
+}
+body.webmaster-ux section .box_nav {
+  background: whitesmoke;
+}
+body.webmaster-ux section .box_main {
+>>>>>>> FETCH_HEAD
   background: #1f272d;
 }
-body.webmaster-ux section .container:hover .show {
+body.webmaster-ux section .container:hover .show,
+body.webmaster-ux section .active_nav .show {
   -webkit-animation: fadeIn 0.5s ease-in-out;
   -moz-animation: fadeIn 0.5s ease-in-out;
   -o-animation: fadeIn 0.5s ease-in-out;
   animation: fadeIn 0.5s ease-in-out;
 }
+<<<<<<< HEAD
 body.webmaster-ux section .container_active .show {
   -webkit-animation: fadeIn 0.5s ease-in-out;
   -moz-animation: fadeIn 0.5s ease-in-out;
   -o-animation: fadeIn 0.5s ease-in-out;
   animation: fadeIn 0.5s ease-in-out;
+=======
+body.webmaster-ux section .active_nav .show .logo {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f2f0eb;
+  border: solid 2px #f0f0f0;
+  height: 5.5%;
+  margin-bottom: 16.8%;
+}
+body.webmaster-ux section .active_nav .show a.home {
+  color: #e75a41;
+  font-size: 1.5em;
+  margin-bottom: 2.5%;
+  text-decoration: underline;
+  width: 100%;
+}
+body.webmaster-ux section .active_nav .show a.home:hover {
+  text-decoration: none;
+>>>>>>> FETCH_HEAD
 }
 body.webmaster-ux section p {
   font-size: 1.4em;
