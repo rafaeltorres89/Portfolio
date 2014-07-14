@@ -101,6 +101,17 @@
         to      { background: #F2F0EB; }
     }
 
+    //Menu First
+    @-webkit-keyframes collor-first_child {
+        from    { background: #F5F5F5; }
+        to      { background: #F5F5F5; }
+    }
+
+    @keyframes collor-first_child {
+        from    { background: #F5F5F5; }
+        to      { background: #F5F5F5; }
+    }
+
     //Font
     @-webkit-keyframes fitBtnTop {
         from    { color: #1F272D; }
@@ -110,4 +121,26 @@
     @keyframes fitBtnTop {
         from    { color: #1F272D; }
         to      { color: #F5F5F5; }
+    }
+
+    //Largura
+    @-webkit-keyframes widthNav {
+        from    { width: 50%; }
+        to      { width: 16.7%; }
+    }
+
+    @keyframes widthNav {
+        from    { width: 50%; }
+        to      { width: 16.7%; }
+    }
+
+    //Largura
+    @-webkit-keyframes widthMain {
+        from    { width: 50%; }
+        to      { width: 83.3%; }
+    }
+
+    @keyframes widthMain {
+        from    { width: 50%; }
+        to      { width: 83.3%; }
     }

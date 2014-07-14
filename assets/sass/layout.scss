@@ -42,6 +42,24 @@
             @extend #FLOAT-LEFT;
             @include block_default;
 
+            .fifty      { width: 50%; }
+
+            .sixteen
+            {
+                width: 16.7%; 
+
+                -webkit-animation: widthNav 1s;
+                animation: widthNav 1s;
+            }
+
+            .eighty
+            {
+                width: 83.3%; 
+
+                -webkit-animation: widthMain 1s;
+                animation: widthMain 1s;
+            }
+
             .container
             {
                 @include block_50;
@@ -49,6 +67,7 @@
                 .nav
                 {
                     @extend #POSITION-ABSOLUTE;
+                    @extend #FLOAT-LEFT;
                     @extend #SHOW;
                     @include fadeIn;
                     height: 30px;
@@ -59,8 +78,8 @@
                     width: 65px;
                 }
 
-                .nav_left   { @extend #FLOAT-LEFT;   background: url(../image/sprite.png) 0 0 no-repeat; }
-                .nav_right  { @extend #FLOAT-LEFT;   background: url(../image/sprite.png) -65px 0 no-repeat; }
+                .nav_full   { background: url(../image/sprite.png) 0 0 no-repeat; }
+                .nav_down   { background: url(../image/sprite.png) 0 -30px no-repeat; }
 
                 .show
                 {
@@ -71,18 +90,6 @@
                     top: 0;
                     text-align: center;
                     width: 100%;
-
-                    .triangle
-                    {
-                        @extend #FLOAT-LEFT;
-                        @extend #POSITION-ABSOLUTE;
-                        background: url(../image/sprite.png) 0 -30px no-repeat;
-                        height: 213px;
-                        margin: 0;
-                        top: 0;
-                        width: 250px;
-                        z-index: 1000;
-                    }
 
                     h2
                     {
@@ -99,6 +106,10 @@
                         z-index: 2000;
                         margin-bottom: 17%;
                     }
+
+                    .logo,
+                    a.home 
+                    { @extend #HIDE; }
 
                     nav
                     {
@@ -138,7 +149,7 @@
 
                                     span.graphic
                                     {
-                                        background: url(../image/sprite.png) -258px -41px no-repeat;
+                                        background: url(../image/sprite.png) -65px 0 no-repeat;
                                         height: 54px;
                                         margin-left: -27px;
                                         width: 55px;
@@ -146,7 +157,7 @@
 
                                     span.design
                                     {
-                                        background: url(../image/sprite.png) -250px -149px no-repeat;
+                                        background: url(../image/sprite.png) -120px 0 no-repeat;
                                         height: 54px;
                                         margin-left: -38px;
                                         width: 72px;
@@ -154,7 +165,7 @@
 
                                     span.code
                                     {
-                                        background: url(../image/sprite.png) -250px -257px no-repeat;
+                                        background: url(../image/sprite.png) -192px 0 no-repeat;
                                         height: 54px;
                                         margin-left: -38px;
                                         width: 76px;
@@ -165,9 +176,9 @@
                                 {
                                     background: $palette-pastel;
 
-                                    span.graphic    { background: url(../image/sprite.png) -258px -95px no-repeat; }
-                                    span.design     { background: url(../image/sprite.png) -250px -203px no-repeat; }
-                                    span.code       { background: url(../image/sprite.png) -174px -257px no-repeat; }
+                                    span.graphic    { background: url(../image/sprite.png) -65px -54px no-repeat; }
+                                    span.design     { background: url(../image/sprite.png) -120px -54px no-repeat; }
+                                    span.code       { background: url(../image/sprite.png) -192px -54px no-repeat; }
 
                                     -webkit-animation: backCollor 0.5s;
                                     animation: backCollor 0.5s;
@@ -209,16 +220,16 @@
 
                             li:last-child   { margin-right: 0px; }
 
-                            li.face         { background: url(../image/sprite.png) -130px 0 no-repeat;  width: 24px; }
-                            li.face:hover   { background: url(../image/sprite.png) -154px 0 no-repeat; }
-                            li.gPlus        { background: url(../image/sprite.png) -178px 0 no-repeat;  width: 20px; }
-                            li.gPlus:hover  { background: url(../image/sprite.png) -198px 0 no-repeat; }
-                            li.din          { background: url(../image/sprite.png) -218px 0 no-repeat;  width: 20px; }
-                            li.din:hover    { background: url(../image/sprite.png) -238px 0 no-repeat; }
-                            li.twitt        { background: url(../image/sprite.png) -258px 0 no-repeat;  width: 24px; }
-                            li.twitt:hover  { background: url(../image/sprite.png) -282px 0 no-repeat; }
-                            li.mail         { background: url(../image/sprite.png) -258px -20px no-repeat;  width: 28px; }
-                            li.mail:hover   { background: url(../image/sprite.png) -286px -20px no-repeat; }
+                            li.face         { background: url(../image/sprite.png) 0 -60px no-repeat;  width: 24px; }
+                            li.face:hover   { background: url(../image/sprite.png) 0 -80px no-repeat; }
+                            li.gPlus        { background: url(../image/sprite.png) -24px -60px no-repeat;  width: 20px; }
+                            li.gPlus:hover  { background: url(../image/sprite.png) -24px -80px no-repeat; }
+                            li.din          { background: url(../image/sprite.png) -44px -60px no-repeat;  width: 20px; }
+                            li.din:hover    { background: url(../image/sprite.png) -44px -80px no-repeat; }
+                            li.twitt        { background: url(../image/sprite.png) 0 -100px no-repeat;  width: 24px; }
+                            li.twitt:hover  { background: url(../image/sprite.png) 0 -120px no-repeat; }
+                            li.mail         { background: url(../image/sprite.png) -24px -100px no-repeat;  width: 28px; }
+                            li.mail:hover   { background: url(../image/sprite.png) -24px -120px no-repeat; }
                         }
                     }
 
@@ -238,6 +249,7 @@
                 }
 
                 .other_info  { background: $palette-beige; }
+
                 .about_me
                 {
                     background: $palette-dark;
@@ -249,19 +261,68 @@
                         font-size: 1.5em;
                         margin: 15.5% 0 27.5% 0;
                     }
+
+                    h3
+                    {
+                        a
+                        { 
+                            @extend #POSITION-FIXED;
+                            @extend #TEXT-INDENT;
+                            background: url(../image/sprite.png) -52px -108px no-repeat;
+                            bottom: 0;
+                            right: 0;
+                            height: 40px;
+                            margin: 0 1% 1% 0;
+                            width: 105px;
+                        }
+
+                        a:hover { background-position: -157px -108px; }
+                    }
                 }
             }
 
-            .box_left  { @extend #FLOAT-LEFT;   background: $palette-beige; }
-            .box_right { @extend #FLOAT-RIGHT;   background: $palette-dark; }
+            .box_nav    { @extend #FLOAT-LEFT;   background: $palette-beige; }
+            .box_main   { @extend #FLOAT-RIGHT;   background: $palette-dark; }
 
-            .container:hover
+            .container:hover,
+            .active_nav
             {
                 .nav    { @extend #HIDE; }
                 .show
                 {
                     @extend #SHOW;
                     @include fadeIn;
+                }
+            }
+
+            .active_nav
+            {
+                .show
+                {
+                    h1 { @extend #HIDE; }
+                    h2 { @extend #HIDE; }
+
+                    .logo
+                    {
+                        @extend #SHOW;
+                        @include block_default;
+                        background: $palette-pastel;
+                        border: solid 2px $palette-gray;
+                        height: 5.5%;
+                        margin-bottom: 16.8%;
+                    }
+
+                    a.home
+                    {
+                        @extend #SHOW;
+                        color: $palette-orange;
+                        font-size: 1.5em;
+                        margin-bottom: 2.5%;
+                        text-decoration: underline;
+                        width: 100%;
+                    }
+
+                    a.home:hover { text-decoration: none; }
                 }
             }
 

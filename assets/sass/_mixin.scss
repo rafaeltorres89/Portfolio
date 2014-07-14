@@ -19,7 +19,7 @@
     //Bloco 50%
     @mixin block_50 {
         @extend #POSITION-RELATIVE;
-        height: 100%;   width: 50%;
+        height: 100%;
         margin: 0;
         padding: 0;
     }
