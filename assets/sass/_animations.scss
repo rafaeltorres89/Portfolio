@@ -134,6 +134,28 @@
         to      { width: 16.7%; }
     }
 
+    //Largura 16
+    @-webkit-keyframes widthsixteen {
+        from    { width: 16.7%; }
+        to      { width: 50%; }
+    }
+
+    @keyframes widthsixteen {
+        from    { width: 16.7%; }
+        to      { width: 50%; }
+    }
+
+    //Largura 80
+    @-webkit-keyframes widtheighty {
+        from    { width: 83.3%; }
+        to      { width: 50%; }
+    }
+
+    @keyframes widtheighty {
+        from    { width: 83.3%; }
+        to      { width: 50%; }
+    }
+
     //Largura
     @-webkit-keyframes widthMain {
         from    { width: 50%; }

@@ -5,9 +5,9 @@ $(function(){
 		$(".box_main").removeClass("fifty").addClass("eighty");
 	});
 
-	$(".home").click(function(event){
+	$(".logo").click(function(event){
 		event.preventDefault();
-		$(".box_nav").removeClass("sixteen active_nav").addClass("fifty");
-		$(".box_main").removeClass("eighty").addClass("fifty");
+		$(".box_nav").removeClass("sixteen active_nav").addClass("fifty widthsixteen");
+		$(".box_main").removeClass("eighty").addClass("fifty widtheighty");
 	});
 });

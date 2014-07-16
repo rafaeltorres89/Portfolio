@@ -256,6 +256,46 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 }
 
+@-webkit-keyframes widthsixteen {
+  from {
+    width: 16.7%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes widthsixteen {
+  from {
+    width: 16.7%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes widtheighty {
+  from {
+    width: 83.3%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes widtheighty {
+  from {
+    width: 83.3%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
 @-webkit-keyframes widthMain {
   from {
     width: 50%;
@@ -305,13 +345,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 #HIDE, body.webmaster-ux section .container .show, body.webmaster-ux section .container .show .logo,
-body.webmaster-ux section .container .show a.home, body.webmaster-ux section .container:hover .nav,
-body.webmaster-ux section .active_nav .nav, body.webmaster-ux section .active_nav .show h1, body.webmaster-ux section .active_nav .show h2 {
+body.webmaster-ux section .container .show a.home,
+body.webmaster-ux section .container .show .who-am-i, body.webmaster-ux section .container .show p.small_copy, body.webmaster-ux section .container:hover .nav,
+body.webmaster-ux section .active_nav .nav, body.webmaster-ux section .active_nav .show h1, body.webmaster-ux section .active_nav .show h2, body.webmaster-ux section .active_nav .show p.copyright {
   display: none;
 }
 
 #SHOW, body.webmaster-ux section .container .nav, body.webmaster-ux section .container:hover .show,
-body.webmaster-ux section .active_nav .show, body.webmaster-ux section .active_nav .show .logo, body.webmaster-ux section .active_nav .show a.home, body.webmaster-ux section a.btn {
+body.webmaster-ux section .active_nav .show, body.webmaster-ux section .active_nav .show .logo, body.webmaster-ux section .active_nav .show p.who-am-i, body.webmaster-ux section .active_nav .show p.small_copy, body.webmaster-ux section a.btn {
   display: block;
 }
 
@@ -378,6 +419,14 @@ body.webmaster-ux section {
 }
 body.webmaster-ux section .fifty {
   width: 50%;
+}
+body.webmaster-ux section .widthsixteen {
+  -webkit-animation: widthsixteen 1s;
+  animation: widthsixteen 1s;
+}
+body.webmaster-ux section .widtheighty {
+  -webkit-animation: widtheighty 1s;
+  animation: widtheighty 1s;
 }
 body.webmaster-ux section .sixteen {
   width: 16.7%;
@@ -619,18 +668,28 @@ body.webmaster-ux section .active_nav .show .logo {
   padding: 0;
   background: #f2f0eb;
   border: solid 2px #f0f0f0;
+  cursor: pointer;
   height: 5.5%;
-  margin-bottom: 16.8%;
 }
-body.webmaster-ux section .active_nav .show a.home {
-  color: #e75a41;
-  font-size: 1.5em;
-  margin-bottom: 2.5%;
-  text-decoration: underline;
+body.webmaster-ux section .active_nav .show p.who-am-i {
+  margin: 50% 0 2.5%;
   width: 100%;
 }
-body.webmaster-ux section .active_nav .show a.home:hover {
+body.webmaster-ux section .active_nav .show p.who-am-i a {
+  color: #e75a41;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+body.webmaster-ux section .active_nav .show p.who-am-i a:hover {
   text-decoration: none;
+}
+body.webmaster-ux section .active_nav .show .social_media {
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+body.webmaster-ux section .active_nav .show p.small_copy {
+  text-align: center;
+  width: 15.8%;
 }
 body.webmaster-ux section p {
   font-size: 1.4em;

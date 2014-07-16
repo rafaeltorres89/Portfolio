@@ -42,11 +42,23 @@
             @extend #FLOAT-LEFT;
             @include block_default;
 
-            .fifty      { width: 50%; }
+            .fifty { width: 50%; }
+
+            .widthsixteen
+            {
+                -webkit-animation: widthsixteen 1s;
+                animation: widthsixteen 1s;
+            }
+
+            .widtheighty
+            {
+                -webkit-animation: widtheighty 1s;
+                animation: widtheighty 1s;
+            }
 
             .sixteen
             {
-                width: 16.7%; 
+                width: 16.7%;
 
                 -webkit-animation: widthNav 1s;
                 animation: widthNav 1s;
@@ -54,7 +66,7 @@
 
             .eighty
             {
-                width: 83.3%; 
+                width: 83.3%;
 
                 -webkit-animation: widthMain 1s;
                 animation: widthMain 1s;
@@ -108,7 +120,8 @@
                     }
 
                     .logo,
-                    a.home 
+                    a.home,
+                    .who-am-i
                     { @extend #HIDE; }
 
                     nav
@@ -246,6 +259,8 @@
                         -webkit-animation: fitBottom 1s;
                         animation: fitBottom 1s;
                     }
+
+                    p.small_copy { @extend #HIDE; }
                 }
 
                 .other_info  { background: $palette-beige; }
@@ -265,7 +280,7 @@
                     h3
                     {
                         a
-                        { 
+                        {
                             @extend #POSITION-FIXED;
                             @extend #TEXT-INDENT;
                             background: url(../image/sprite.png) -52px -108px no-repeat;
@@ -308,21 +323,40 @@
                         @include block_default;
                         background: $palette-pastel;
                         border: solid 2px $palette-gray;
+                        cursor: pointer;
                         height: 5.5%;
-                        margin-bottom: 16.8%;
                     }
 
-                    a.home
+                    p.who-am-i
                     {
                         @extend #SHOW;
-                        color: $palette-orange;
-                        font-size: 1.5em;
-                        margin-bottom: 2.5%;
-                        text-decoration: underline;
+                        margin: 50% 0 2.5%;
                         width: 100%;
+
+                        a
+                        {
+                            color: $palette-orange;
+                            font-size: 1.5em;
+                            text-decoration: underline;
+                        }
+
+                        a:hover { text-decoration: none; }
                     }
 
-                    a.home:hover { text-decoration: none; }
+                    .social_media
+                    {
+                        margin-bottom: 5%;
+                        margin-top: 10%;
+                    }
+
+                    p.copyright { @extend #HIDE; }
+
+                    p.small_copy
+                    {
+                        @extend #SHOW;
+                        text-align: center;
+                        width: 15.8%;
+                    }
                 }
             }
 
