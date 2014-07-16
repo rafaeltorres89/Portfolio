@@ -9,6 +9,130 @@
     /* Animations
     ----------------------------------------------------------------------- */
 
+<<<<<<< HEAD
+    /* 1. Fade ============================================================ */
+
+        //Opacidade FadeIn
+        @-webkit-keyframes fadeIn {
+            0%      { opacity: 0; }
+            100%    { opacity: 1; }
+        }
+
+        @-moz-keyframes fadeIn {
+            0%      { opacity: 0; }
+            100%    { opacity: 1; }
+        }
+
+        @-o-keyframes fadeIn {
+            0%      { opacity: 0; }
+            100%    { opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            0%      { opacity: 0; }
+            100%    { opacity: 1; }
+        }
+
+        //Opacidade FadeIn Botão
+        @-webkit-keyframes fadeInBtn {
+            0%      { opacity: 0.5; }
+            100%    { opacity: 1; }
+        }
+
+        @-moz-keyframes fadeInBtn {
+            0%      { opacity: 0.5;}
+            100%    { opacity: 1; }
+        }
+
+        @-o-keyframes fadeInBtn {
+            0%      { opacity: 0.5; }
+            100%    { opacity: 1; }
+        }
+
+        @keyframes fadeInBtn {
+            0%      { opacity: 0.5; }
+            100%    { opacity: 1; }
+        }
+
+    /* 2. Ajustes ========================================================= */
+        //Top
+        @-webkit-keyframes fitTop {
+            from    { margin-top: 0; }
+            to      { margin-top: 5%; }
+        }
+
+        @keyframes fitTop {
+            from    { margin-top: 0; }
+            to      { margin-top: 5%; }
+        }
+
+        //Bottom
+        @-webkit-keyframes fitBottom {
+            from    { margin-left: 25%; }
+            to      { margin-left: 0.5%; }
+        }
+
+        @keyframes fitBottom {
+            from    { margin-left: 25%; }
+            to      { margin-left: 0.5%; }
+        }
+
+        //Social Media
+        @-webkit-keyframes fitSM {
+            from    { margin-top: 25%; }
+            to      { margin-top: 4.5%; }
+        }
+
+        @keyframes fitSM {
+            from    { margin-top: 25%; }
+            to      { margin-top: 4.5%; }
+        }
+
+        //Menu
+        @-webkit-keyframes animaNav {
+            from    { width: 50%; }
+            to      { width: 16.7%; }
+        }
+
+        @keyframes animaNav {
+            from    { width: 50%; }
+            to      { width: 16.7%; }
+        }
+
+        //Conteúdo
+        @-webkit-keyframes animaMain {
+            from    { width: 50%; }
+            to      { width: 83.3%; }
+        }
+
+        @keyframes animaMain {
+            from    { width: 50%; }
+            to      { width: 83.3%; }
+        }
+
+    /* 3. Cores de Fundo ================================================== */
+        //Menu
+        @-webkit-keyframes backCollor {
+            from    { background: #F9F9F9; }
+            to      { background: #F2F0EB; }
+        }
+
+        @keyframes backCollor {
+            from    { background: #F9F9F9; }
+            to      { background: #F2F0EB; }
+        }
+
+        //Font
+        @-webkit-keyframes fitBtnTop {
+            from    { color: #1F272D; }
+            to      { color: #F5F5F5; }
+        }
+
+        @keyframes fitBtnTop {
+            from    { color: #1F272D; }
+            to      { color: #F5F5F5; }
+        }
+=======
     /* ============================ 1. Fade
     ======================================= */
     //Opacidade FadeIn
@@ -166,3 +290,4 @@
         from    { width: 50%; }
         to      { width: 83.3%; }
     }
+>>>>>>> FETCH_HEAD

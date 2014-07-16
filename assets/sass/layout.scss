@@ -42,6 +42,7 @@
             @extend #FLOAT-LEFT;
             @include block_default;
 
+<<<<<<< HEAD
             .fifty { width: 50%; }
 
             .widthsixteen
@@ -55,6 +56,19 @@
                 -webkit-animation: widtheighty 1s;
                 animation: widtheighty 1s;
             }
+=======
+<<<<<<< HEAD
+            .fifty { width: 50%; }
+
+            .sixteen
+            {
+                width: 16.7%;
+
+                -webkit-animation: animaNav 1s;
+                animation: animaNav 1s;
+=======
+            .fifty      { width: 50%; }
+>>>>>>> FETCH_HEAD
 
             .sixteen
             {
@@ -62,18 +76,31 @@
 
                 -webkit-animation: widthNav 1s;
                 animation: widthNav 1s;
+>>>>>>> FETCH_HEAD
             }
 
             .eighty
             {
+<<<<<<< HEAD
                 width: 83.3%;
+=======
+<<<<<<< HEAD
+                width: 83.3%;
+
+                -webkit-animation: animaMain 1s;
+                animation: animaMain 1s;
+=======
+                width: 83.3%; 
+>>>>>>> FETCH_HEAD
 
                 -webkit-animation: widthMain 1s;
                 animation: widthMain 1s;
+>>>>>>> FETCH_HEAD
             }
 
             .container
             {
+                @extend #FLOAT-LEFT;
                 @include block_50;
 
                 .nav
@@ -90,8 +117,13 @@
                     width: 65px;
                 }
 
+<<<<<<< HEAD
+                .nav_left   { @extend #FLOAT-LEFT;   background: url(../image/sprite.png) 0 0 no-repeat; }
+                .nav_right  { @extend #FLOAT-LEFT;   background: url(../image/sprite.png) 0 -30px no-repeat; }
+=======
                 .nav_full   { background: url(../image/sprite.png) 0 0 no-repeat; }
                 .nav_down   { background: url(../image/sprite.png) 0 -30px no-repeat; }
+>>>>>>> FETCH_HEAD
 
                 .show
                 {
@@ -296,8 +328,13 @@
                 }
             }
 
+<<<<<<< HEAD
+            .box_light  { background: $palette-beige; }
+            .box_dark   { background: $palette-dark; }
+=======
             .box_nav    { @extend #FLOAT-LEFT;   background: $palette-beige; }
             .box_main   { @extend #FLOAT-RIGHT;   background: $palette-dark; }
+>>>>>>> FETCH_HEAD
 
             .container:hover,
             .active_nav
@@ -310,6 +347,15 @@
                 }
             }
 
+<<<<<<< HEAD
+            .container_active
+            {
+                .nav    { @extend #HIDE; }
+                .show
+                {
+                    @extend #SHOW;
+                    @include fadeIn;
+=======
             .active_nav
             {
                 .show
@@ -343,6 +389,7 @@
                         a:hover { text-decoration: none; }
                     }
 
+<<<<<<< HEAD
                     .social_media
                     {
                         margin-bottom: 5%;
@@ -357,6 +404,10 @@
                         text-align: center;
                         width: 15.8%;
                     }
+=======
+                    a.home:hover { text-decoration: none; }
+>>>>>>> FETCH_HEAD
+>>>>>>> FETCH_HEAD
                 }
             }
 

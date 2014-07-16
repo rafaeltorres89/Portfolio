@@ -30,8 +30,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 */
 /* Animations
 ----------------------------------------------------------------------- */
-/* ============================ 1. Fade
-======================================= */
+/* 1. Fade ============================================================ */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -112,8 +111,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 }
 
-/* ========================= 2. Ajustes
-======================================= */
+/* 2. Ajustes ========================================================= */
 @-webkit-keyframes fitTop {
   from {
     margin-top: 0;
@@ -174,8 +172,47 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 }
 
-/* ================== 3. Cores de Fundo
-======================================= */
+@-webkit-keyframes animaNav {
+  from {
+    width: 50%;
+  }
+
+  to {
+    width: 16.7%;
+  }
+}
+
+@keyframes animaNav {
+  from {
+    width: 50%;
+  }
+
+  to {
+    width: 16.7%;
+  }
+}
+
+@-webkit-keyframes animaMain {
+  from {
+    width: 50%;
+  }
+
+  to {
+    width: 83.3%;
+  }
+}
+
+@keyframes animaMain {
+  from {
+    width: 50%;
+  }
+
+  to {
+    width: 83.3%;
+  }
+}
+
+/* 3. Cores de Fundo ================================================== */
 @-webkit-keyframes backCollor {
   from {
     background: #F9F9F9;
@@ -336,6 +373,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 */
 /* Settings
 ----------------------------------------------------------------------- */
+<<<<<<< HEAD
+#FLOAT-LEFT, body.webmaster-ux section, body.webmaster-ux section .container, body.webmaster-ux section .container .nav_left, body.webmaster-ux section .container .nav_right, body.webmaster-ux section .container .show nav ul li a, body.webmaster-ux section .container .show .social_media ul li, body.webmaster-ux section .container .show .social_media ul li a {
+  float: left;
+}
+
+#FLOAT-RIGHT {
+  float: right;
+}
+
+#HIDE, body.webmaster-ux section .container .show, body.webmaster-ux section .container:hover .nav, body.webmaster-ux section .container_active .nav {
+  display: none;
+}
+
+#SHOW, body.webmaster-ux section .container .nav, body.webmaster-ux section .container:hover .show, body.webmaster-ux section .container_active .show, body.webmaster-ux section a.btn {
+=======
 #FLOAT-LEFT, body.webmaster-ux section, body.webmaster-ux section .container .nav, body.webmaster-ux section .container .show nav ul li a, body.webmaster-ux section .container .show .social_media ul li, body.webmaster-ux section .container .show .social_media ul li a, body.webmaster-ux section .box_nav {
   float: left;
 }
@@ -352,7 +404,12 @@ body.webmaster-ux section .active_nav .nav, body.webmaster-ux section .active_na
 }
 
 #SHOW, body.webmaster-ux section .container .nav, body.webmaster-ux section .container:hover .show,
+<<<<<<< HEAD
 body.webmaster-ux section .active_nav .show, body.webmaster-ux section .active_nav .show .logo, body.webmaster-ux section .active_nav .show p.who-am-i, body.webmaster-ux section .active_nav .show p.small_copy, body.webmaster-ux section a.btn {
+=======
+body.webmaster-ux section .active_nav .show, body.webmaster-ux section .active_nav .show .logo, body.webmaster-ux section .active_nav .show a.home, body.webmaster-ux section a.btn {
+>>>>>>> FETCH_HEAD
+>>>>>>> FETCH_HEAD
   display: block;
 }
 
@@ -430,6 +487,15 @@ body.webmaster-ux section .widtheighty {
 }
 body.webmaster-ux section .sixteen {
   width: 16.7%;
+<<<<<<< HEAD
+  -webkit-animation: animaNav 1s;
+  animation: animaNav 1s;
+}
+body.webmaster-ux section .eighty {
+  width: 83.3%;
+  -webkit-animation: animaMain 1s;
+  animation: animaMain 1s;
+=======
   -webkit-animation: widthNav 1s;
   animation: widthNav 1s;
 }
@@ -437,6 +503,7 @@ body.webmaster-ux section .eighty {
   width: 83.3%;
   -webkit-animation: widthMain 1s;
   animation: widthMain 1s;
+>>>>>>> FETCH_HEAD
 }
 body.webmaster-ux section .container {
   height: 100%;
@@ -458,7 +525,11 @@ body.webmaster-ux section .container .nav {
 body.webmaster-ux section .container .nav_full {
   background: url(../image/sprite.png) 0 0 no-repeat;
 }
+<<<<<<< HEAD
+body.webmaster-ux section .container .nav_right {
+=======
 body.webmaster-ux section .container .nav_down {
+>>>>>>> FETCH_HEAD
   background: url(../image/sprite.png) 0 -30px no-repeat;
 }
 body.webmaster-ux section .container .show {
@@ -637,6 +708,12 @@ body.webmaster-ux section .container .about_me p.about {
   font-size: 1.5em;
   margin: 15.5% 0 27.5% 0;
 }
+<<<<<<< HEAD
+body.webmaster-ux section .box_light {
+  background: whitesmoke;
+}
+body.webmaster-ux section .box_dark {
+=======
 body.webmaster-ux section .container .about_me h3 a {
   background: url(../image/sprite.png) -52px -108px no-repeat;
   bottom: 0;
@@ -652,6 +729,7 @@ body.webmaster-ux section .box_nav {
   background: whitesmoke;
 }
 body.webmaster-ux section .box_main {
+>>>>>>> FETCH_HEAD
   background: #1f272d;
 }
 body.webmaster-ux section .container:hover .show,
@@ -661,6 +739,13 @@ body.webmaster-ux section .active_nav .show {
   -o-animation: fadeIn 0.5s ease-in-out;
   animation: fadeIn 0.5s ease-in-out;
 }
+<<<<<<< HEAD
+body.webmaster-ux section .container_active .show {
+  -webkit-animation: fadeIn 0.5s ease-in-out;
+  -moz-animation: fadeIn 0.5s ease-in-out;
+  -o-animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
+=======
 body.webmaster-ux section .active_nav .show .logo {
   height: 100%;
   width: 100%;
@@ -682,6 +767,7 @@ body.webmaster-ux section .active_nav .show p.who-am-i a {
 }
 body.webmaster-ux section .active_nav .show p.who-am-i a:hover {
   text-decoration: none;
+>>>>>>> FETCH_HEAD
 }
 body.webmaster-ux section .active_nav .show .social_media {
   margin-bottom: 5%;
